@@ -1058,42 +1058,61 @@
     <section id="settings-easy">
 
         <script>
+            // CREER Ccollection
             var video31 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw?";
             function myFunction() {
                 document.getElementById("video").src = video31;
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection";
+                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter une collection";
+                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre collection";
+                document.getElementById("infos4").textContent = " Enregistrer";
 
             }
+            // MODIFIER COLLECTION
             function myFunction1() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/5oh0Akw-vwE?autoplay=1&mute=1&loop=1&playlist=5oh0Akw-vwE";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection";
+                document.getElementById("infos2").textContent = " Apuie long sur la collection que vous souhaiter modifier";
+                document.getElementById("infos3").textContent = " choisir Modifier";
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
 
             }
+            // CREER COMMANDE
             function myFunction2() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/MEncvWICQuc?autoplay=1&mute=1&loop=1&playlist=MEncvWICQuc";
-
-                document.getElementById("infos").textContent = " selectionner DASHBOARD=>Collection";
-                document.getElementById("infos1").textContent = " Choisir une collection";
-                document.getElementById("infos2").textContent = " activer les graphiques";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection puis commande";
+                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter une commande";
+                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre commande";
+                document.getElementById("infos4").textContent = " Enregistrer";
             }
+            // MODIFIER COMMANDE
             function myFunction3() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/CF87iS-KCRk?autoplay=1&mute=1&loop=1&playlist=CF87iS-KCRk";
-
-                document.getElementById("infos").textContent = " selectionner Dashboard=>Collection";
-                document.getElementById("infos1").textContent = " choisir une collection";
-                document.getElementById("infos2").textContent = " activer les graphiques";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection puis commande";
+                document.getElementById("infos2").textContent = " Apuie long sur la commande que vous souhaiter modifier";
+                document.getElementById("infos3").textContent = " choisir Modifier";
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            // DASHBOARD PRINCIPAL
             function myFunction4() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8";
+                document.getElementById("video").src = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU";
 
                 document.getElementById("infos").textContent = " #selectionner Dashboard=>Collection";
                 document.getElementById("infos1").textContent = " #Choisir une collection";
                 document.getElementById("infos2").textContent = " #Activer les graphiques";
             }
+            // DASHBOARD COMMANDE
             function myFunction5() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/6bRs_eYNazw?autoplay=1&mute=1&loop=1&playlist=6bRs_eYNazw"
                 document.getElementById("infos").textContent = " #selectionner DASHBOARD=>Commande";
                 document.getElementById("infos1").textContent = " #Choisir une commande";
                 document.getElementById("infos2").textContent = " #Activer les graphiques";
             }
+            // FRAIS DE PORT
             function myFunction6() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8";
 
@@ -1101,6 +1120,8 @@
                 document.getElementById("infos1").textContent = " choisir une collection";
                 document.getElementById("infos2").textContent = " activer les graphiques";
             }
+
+            // GESTION FOURNISSEUR
             function myFunction7() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8";
 
@@ -1108,26 +1129,33 @@
                 document.getElementById("infos1").textContent = " choisir une collection";
                 document.getElementById("infos2").textContent = " activer les graphiques";
             }
+            // DASHBOARD PRODUITS
             function myFunction8() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg"
-                document.getElementById("infos").textContent = " selectionner DASHBOARD=>Collection";
-                document.getElementById("infos1").textContent = " choisir une collection";
+                document.getElementById("infos").textContent = " selectionner DASHBOARD=>produit";
+                document.getElementById("infos1").textContent = " choisir un produit";
                 document.getElementById("infos2").textContent = " activer les graphiques";
+                document.getElementById("infos3").textContent = " double cliquez sur l'element pour voir ces stats";
             }
+            // CREER PRODUITS                   
             function myFunction9() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM";
-
-                document.getElementById("infos").textContent = " selectionner DASHBOARD=>Collection";
-                document.getElementById("infos1").textContent = " choisir une collection";
-                document.getElementById("infos2").textContent = " activer les graphiques";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
+                document.getElementById("infos2").textContent = " cliquer sur + pour ajouter un produit";
+                document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre produit";
+                document.getElementById("infos4").textContent = " Enregistrer";
             }
+            // MODIFIER PRODUITS                      
             function myFunction10() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4";
-
-                document.getElementById("infos").textContent = " selectionner DASHBOARD=>Collection";
-                document.getElementById("infos1").textContent = " choisir une collection";
-                document.getElementById("infos2").textContent = " activer les graphiques";
+                document.getElementById("infos").textContent = " selectionner Gestion";
+                document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
+                document.getElementById("infos2").textContent = " Apuie long sur le produit que vous souhaiter modifier";
+                document.getElementById("infos3").textContent = " choisir Modifier";
+                document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            // NOTE DE FRAIS
             function myFunction11() {
                 document.getElementById("video").src = "https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8";
 
@@ -1291,6 +1319,8 @@
                             <b id="infos" class="is-visible"></b>
                             <b id="infos1"></b>
                             <b id="infos2"></b>
+                            <b id="infos3"></b>
+                            <b id="infos4"></b>
                         </span>
                     </h2>
                     </p>
