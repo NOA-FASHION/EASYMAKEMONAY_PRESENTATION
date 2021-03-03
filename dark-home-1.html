@@ -22,21 +22,23 @@
     <link rel="stylesheet" href="assets/css/dark-version.css">
 
     <style>
-        #video1 {
-
-            border-radius: 20px;
-        }
-
         body {
 
-            background-color: black;
-            margin: 50px;
+            background-image: url("71.jpg");
+
         }
+
+        .lotie {
+            width: 100px;
+            height: 50px;
+
+        }
+
+
 
         div.principale {
             position: relative;
             border-radius: 15%;
-            background-image: url("71.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -45,14 +47,17 @@
             padding-bottom: opx;
             border-radius: 8px;
             box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         div.bouton {
             /* background-color: white; */
             display: inline-block;
             margin-top: 20px;
-            margin-left: 30px;
-            margin-right: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
             margin-bottom: 20px;
             border: white;
             border-radius: 15%;
@@ -83,8 +88,8 @@
             /* background-color:white; */
             display: inline-block;
             margin-top: 20px;
-            margin-left: 30px;
-            margin-right: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
             margin-bottom: 20px;
             border: white;
             border-radius: 15%;
@@ -99,7 +104,8 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 10px;
-            font-size: 14px;
+            font-size: 10px;
+            padding: 5px;
 
         }
 
@@ -110,29 +116,49 @@
 
         div.smartphone {
             display: inline-block;
+            padding: 15px;
             width: 100%;
-            min-height: 460px;
-            border-radius: 15%;
+            height: 570px;
+            border-radius: 30px 30px 10px 10px;
+            background-image: linear-gradient(-38deg, #67696b 0%, #040404 100%);
+            margin-bottom: 60px;
         }
 
         div.premier {
-            width: auto;
-            margin: 0px;
-            display: inline-block;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
             margin-left: auto;
             margin-right: auto;
-
+            width: 60%;
+            border-radius: 15px;
         }
 
         div.second {
 
-            display: inline-block;
-            width: 45%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
             height: auto;
         }
 
-        div.tierce {
 
+        div.card {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+
+
+        div.tierce {
+            position: right;
             display: inline-block;
             width: auto;
             margin: 0px;
@@ -162,19 +188,9 @@
             outline: none;
             border: none;
             background-color: transparent;
+
         }
 
-        div.card {
-            position: relative;
-            width: auto;
-            height: auto;
-            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                5px 5px 5px rgba(0, 0, 0, 0.05),
-                -5px -5px 5px rgba(255, 255, 255, 0.5);
-            border-radius: 15px;
-            margin: 48px 20px 20px 20px;
-        }
 
 
         div.card2 {
@@ -245,38 +261,96 @@
             text-shadow: 0 0 15px #d35400;
         }
 
-        div.info {
-            position: relative;
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 90px;
+                height: 40px;
+
+            }
         }
 
-        p.info {
-            /* background-color: #a68408; */
-            position: absolute;
-            top: 50px;
-            left: 0px;
-            width: 50%;
-            height: 50px;
-            color: white;
-            display: inline-block;
-            padding: opx;
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 80px;
+                height: 35px;
+
+            }
         }
 
-        p.info1 {
-            position: absolute;
-            left: 0px;
-            top: 100px;
-            width: 50%;
-            height: 50px;
-            color: white;
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 70px;
+                height: 30px;
+
+            }
         }
 
-        p.info2 {
-            position: absolute;
-            left: 0px;
-            top: 150px;
-            width: 50%;
-            height: 50px;
-            color: white;
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 80%;
+
+            }
+
+            .divSecond {
+                width: 80%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+
+            }
+
+            .divSecond {
+                width: 90%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .divSecond {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            div.principale {
+                min-width: 100%;
+            }
         }
     </style>
 </head>
@@ -1169,156 +1243,264 @@
         </script>
         <div class="principale">
 
-            <!-- <p id="infos" class="info"> selectionner DASHBOARD=>Collection</p>
-            <p class="info1"> choisir une collection</p>
-            <p class="info2"> activer les graphiques</p> -->
-
-
-            <!-- <div class="container">
-                <ul class="menu2002">
-                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fas fa-users" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-repeat" aria-hidden="true"></i></a></li>
-                </ul>
-            </div> -->
-
-            <!-- <img class="logo" src="logo.png" width="150" height="150" /> -->
-
             <div class="premier">
-                <p>
+
                 <div class="card">
 
                     <button class="bouton" onclick="myFunction()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 CREER COLLECTION
-                            </p>
-                            <p>
+
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_b83mgn35.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
+                                <lottie-player class="lotie"
+                                    src="https://assets6.lottiefiles.com/packages/lf20_b83mgn35.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
                                 </lottie-player>
                             </p>
                         </div>
                     </button>
                 </div>
 
-                </p>
-                <p>
+
                 <div class="card">
                     <button class="bouton" onclick="myFunction1()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 MODIFIER COLLECTION
-                            </p>
-                            <p>
+
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
                                 </lottie-player>
                             </p>
                         </div>
                     </button>
                 </div>
-                </p>
-                <p>
+
                 <div class="card">
                     <button class="bouton" onclick="myFunction2()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 CREER COMMANDE
-                            </p>
-                            <p>
+
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_aog7fmnz.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
+                                <lottie-player class="lotie"
+                                    src="https://assets1.lottiefiles.com/packages/lf20_aog7fmnz.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
                                 </lottie-player>
                             </p>
                         </div>
                     </button>
                 </div>
-                </p>
-                <p>
+
                 <div class="card">
                     <button class="bouton" onclick="myFunction3()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 MODIFIER COMMANDE
-                            </p>
-                            <p>
+
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
                                 </lottie-player>
                             </p>
                         </div>
                     </button>
                 </div>
-                </p>
+
+
+                <div class="card">
+
+                    <button class="bouton" onclick="myFunction4()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                DASHBOARD PRINCIPAL
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets4.lottiefiles.com/packages/lf20_zg8rpxu7.json"
+                                    background="transparent" speed="1" hover loop autoplay></lottie-player>
+
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction5()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                DASHBOARD COMMANDE
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets4.lottiefiles.com/packages/lf20_4rdhwvne.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction6()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                FRAIS DE PORT
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets8.lottiefiles.com/packages/lf20_4wntzkjw.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction7()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                GESTION FOURNISSEUR
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets2.lottiefiles.com/packages/lf20_l9lxmttb.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay></lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction6()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                FRAIS DE PORT
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets8.lottiefiles.com/packages/lf20_4wntzkjw.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction7()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                GESTION FOURNISSEUR
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets2.lottiefiles.com/packages/lf20_l9lxmttb.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay></lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction8()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                DASHBOARD PRODUITS
+
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets4.lottiefiles.com/packages/lf20_4rdhwvne.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction9()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                CREER PRODUITS
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets3.lottiefiles.com/packages/lf20_tsblu4ta.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction10()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                MODIFIER PRODUITS
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
+
+                <div class="card">
+                    <button class="bouton" onclick="myFunction11()" type="button">
+                        <div class="bouton">
+                            <p class="titreBouton">
+                                NOTE DE FRAIS
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="lotie"
+                                    src="https://assets5.lottiefiles.com/packages/lf20_ouvwwwpz.json" mode="bounce"
+                                    background="transparent" speed="1" hover loop autoplay>
+                                </lottie-player>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+
 
             </div>
 
             <div class="second">
-                <p>
-                <div>
-                    <div class="card2">
 
-                        <button class="bouton" onclick="myFunction4()" type="button">
-                            <div class="boutonHaut">
-                                <p class="titreBouton">
-                                    DASHBOARD PRINCIPAL
-                                </p>
-                                <p>
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_zg8rpxu7.json"
-                                        background="transparent" speed="1" style="width: 200px; height: 100px;" hover
-                                        loop autoplay></lottie-player>
-                                    </lottie-player>
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="card2">
-                        <button class="bouton" onclick="myFunction5()" type="button">
-                            <div class="boutonHaut">
-                                <p class="titreBouton">
-                                    DASHBOARD COMMANDE
-
-                                </p>
-                                <p>
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_4rdhwvne.json"
-                                        mode="bounce" background="transparent" speed="1"
-                                        style="width: 200px; height: 100px;" hover loop autoplay>
-                                    </lottie-player>
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                </p>
-                <p>
                 <div class="smartphone info">
-                    <iframe id="video" width="660" height="530" border-radius=20px src="https://www.youtube.com/embed/kpSzK3u2gL4?controls=0&amp;start=9?autoplay=1
+                    <iframe id="video" width="600" height="500" border-radius=20px src="https://www.youtube.com/embed/kpSzK3u2gL4?controls=0&amp;start=9?autoplay=1
                 allow=" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="info">
                     <h2 class="cd-headline clip is-full-width">
 
-                        <span class="cd-words-wrapper">
+                        <span class="cd-words-wrapper info5">
                             <b id="infos" class="is-visible"></b>
                             <b id="infos1"></b>
                             <b id="infos2"></b>
@@ -1327,133 +1509,11 @@
                         </span>
                     </h2>
                     </p>
-                    <!-- <p id="infos" class="info"> </p> -->
-                    <!-- <p class="info1"> choisir une collection</p>
-                    <p class="info2"> activer les graphiques</p> -->
-
 
                 </div>
-                </p>
-                <p>
-                <div>
-                    <div class="card2">
-                        <button class="bouton" onclick="myFunction6()" type="button">
-                            <div class="bouton">
-                                <p class="titreBouton">
-                                    FRAIS DE PORT
-                                </p>
-                                <p>
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_4wntzkjw.json"
-                                        mode="bounce" background="transparent" speed="1"
-                                        style="width: 200px; height: 100px;" hover loop autoplay>
-                                    </lottie-player>
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="card2">
-                        <button class="bouton" onclick="myFunction7()" type="button">
-                            <div class="bouton">
-                                <p class="titreBouton">
-                                    GESTION FOURNISSEUR
-                                </p>
-                                <p>
-                                    <script
-                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_l9lxmttb.json"
-                                        mode="bounce" background="transparent" speed="1"
-                                        style="width: 200px; height: 100px;" hover loop autoplay></lottie-player>
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                </p>
-
             </div>
 
-            <div class="tierce">
-                <p>
-                <div class="card">
-                    <button class="bouton" onclick="myFunction8()" type="button">
-                        <div class="bouton">
-                            <p class="titreBouton">
-                                DASHBOARD PRODUITS
-                            </p>
-                            <p>
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_4rdhwvne.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
-                                </lottie-player>
-                            </p>
-                        </div>
-                    </button>
-                </div>
-                </p>
-                <p>
-                <div class="card">
-                    <button class="bouton" onclick="myFunction9()" type="button">
-                        <div class="bouton">
-                            <p class="titreBouton">
-                                CREER PRODUITS
-                            </p>
-                            <p>
 
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tsblu4ta.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
-                                </lottie-player>
-                            </p>
-                        </div>
-                    </button>
-                </div>
-                </p>
-                <p>
-                <div class="card">
-                    <button class="bouton" onclick="myFunction10()" type="button">
-                        <div class="bouton">
-                            <p class="titreBouton">
-                                MODIFIER PRODUITS
-                            </p>
-                            <p>
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_k4rjlqbl.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
-                                </lottie-player>
-                            </p>
-                        </div>
-                    </button>
-                </div>
-                </p>
-                <p>
-                <div class="card">
-                    <button class="bouton" onclick="myFunction11()" type="button">
-                        <div class="bouton">
-                            <p class="titreBouton">
-                                NOTE DE FRAIS
-                            </p>
-                            <p>
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_ouvwwwpz.json"
-                                    mode="bounce" background="transparent" speed="1"
-                                    style="width: 200px; height: 100px;" hover loop autoplay>
-                                </lottie-player>
-                            </p>
-                        </div>
-                    </button>
-                </div>
-                </p>
-
-            </div>
 
 
         </div>
