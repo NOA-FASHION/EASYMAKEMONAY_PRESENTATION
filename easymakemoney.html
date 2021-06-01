@@ -1133,8 +1133,16 @@
 
         <script>
             // CREER Ccollection
-            var video31 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw?";
+            // var video31 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw?";
+            function checkMediaQuery() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video31 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video31 = "https://www.youtube.com/embed/iDBsyI7RQk0?autoplay=1&mute=1&loop=1&playlist=iDBsyI7RQk0"; }
+                myFunction();
+            }
+
             function myFunction() {
+
+
                 document.getElementById("video").src = video31;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection";
@@ -1143,9 +1151,18 @@
                 document.getElementById("infos4").textContent = " Enregistrer";
 
             }
+            window.addEventListener('resize', checkMediaQuery);
+
+
             // MODIFIER COLLECTION
+            function checkMediaQuery1() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video32 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video32 = "https://www.youtube.com/embed/iDBsyI7RQk0?autoplay=1&mute=1&loop=1&playlist=iDBsyI7RQk0"; }
+                myFunction1();
+            }
+
             function myFunction1() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/5oh0Akw-vwE?autoplay=1&mute=1&loop=1&playlist=5oh0Akw-vwE";
+                document.getElementById("video").src = video32;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection";
                 document.getElementById("infos2").textContent = " Appuie long sur la collection que vous souhaiter modifier";
@@ -1153,93 +1170,154 @@
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
 
             }
+            window.addEventListener('resize', checkMediaQuery1);
             // CREER COMMANDE
+            function checkMediaQuery2() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video33 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video33 = "https://www.youtube.com/embed/iDBsyI7RQk0?autoplay=1&mute=1&loop=1&playlist=iDBsyI7RQk0"; }
+                myFunction2();
+            }
+
             function myFunction2() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/MEncvWICQuc?autoplay=1&mute=1&loop=1&playlist=MEncvWICQuc";
+                document.getElementById("video").src = video33;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection puis commande";
                 document.getElementById("infos2").textContent = " cliquer sur + pour ajouter une commande";
                 document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre commande";
                 document.getElementById("infos4").textContent = " Enregistrer";
             }
+            window.addEventListener('resize', checkMediaQuery2);
             // MODIFIER COMMANDE
+            function checkMediaQuery3() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video34 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video34 = "https://www.youtube.com/embed/iDBsyI7RQk0?autoplay=1&mute=1&loop=1&playlist=iDBsyI7RQk0"; }
+                myFunction3();
+            }
             function myFunction3() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/CF87iS-KCRk?autoplay=1&mute=1&loop=1&playlist=CF87iS-KCRk";
+                document.getElementById("video").src = video34;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection puis commande";
                 document.getElementById("infos2").textContent = " Apuie long sur la commande que vous souhaiter modifier";
                 document.getElementById("infos3").textContent = " choisir Modifier";
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            window.addEventListener('resize', checkMediaQuery3);
             // DASHBOARD PRINCIPAL
+            function checkMediaQuery4() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video35 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video35 = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU"; }
+                myFunction4();
+            }
             function myFunction4() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU";
+                document.getElementById("video").src = video35;
 
                 document.getElementById("infos").textContent = " #selectionner Dashboard=>Collection";
                 document.getElementById("infos1").textContent = " #Choisir une collection";
                 document.getElementById("infos2").textContent = " #Activer les graphiques";
             }
+            window.addEventListener('resize', checkMediaQuery4);
             // DASHBOARD COMMANDE
+            function checkMediaQuery5() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video36 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video36 = "https://www.youtube.com/embed/6bRs_eYNazw?autoplay=1&mute=1&loop=1&playlist=6bRs_eYNazw"; }
+                myFunction5();
+            }
             function myFunction5() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/6bRs_eYNazw?autoplay=1&mute=1&loop=1&playlist=6bRs_eYNazw"
+                document.getElementById("video").src = video36;
                 document.getElementById("infos").textContent = " #selectionner DASHBOARD=>Commande";
                 document.getElementById("infos1").textContent = " #Choisir une commande";
                 document.getElementById("infos2").textContent = " #Activer les graphiques";
             }
+            window.addEventListener('resize', checkMediaQuery5);
             // FRAIS DE PORT
+            function checkMediaQuery6() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video37 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video37 = "https://www.youtube.com/embed/EoPbNQhY_LM?autoplay=1&mute=1&loop=1&playlist=EoPbNQhY_LM"; }
+                myFunction6();
+            }
             function myFunction6() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/EoPbNQhY_LM?autoplay=1&mute=1&loop=1&playlist=EoPbNQhY_LM";
+                document.getElementById("video").src = video37;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner Frais de port, puis choissisez une collection";
                 document.getElementById("infos2").textContent = " pour associer des frais de port a une commande cliquez sur +";
                 document.getElementById("infos3").textContent = " Appuie long sur les frais de port que vous souhaiter modifier"
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
-
+            window.addEventListener('resize', checkMediaQuery6);
             // GESTION FOURNISSEUR
+            function checkMediaQuery7() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video38 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video38 = "https://www.youtube.com/embed/_kPemc9DMpA?autoplay=1&mute=1&loop=1&playlist=_kPemc9DMpA"; }
+                myFunction7();
+            }
             function myFunction7() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/_kPemc9DMpA?autoplay=1&mute=1&loop=1&playlist=_kPemc9DMpA";
+                document.getElementById("video").src = video38;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner Fournisseur, puis choissisez une Fournisseur";
                 document.getElementById("infos2").textContent = " pour creer un fournisseur cliquez sur +";
                 document.getElementById("infos3").textContent = " Appuie long sur le fournisseur que vous souhaiter modifier"
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            window.addEventListener('resize', checkMediaQuery7);
             // DASHBOARD PRODUITS
+            function checkMediaQuery8() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video39 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video39 = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg"; }
+                myFunction8();
+            }
             function myFunction8() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg"
+                document.getElementById("video").src = video39;
                 document.getElementById("infos").textContent = " selectionner DASHBOARD=>produit";
                 document.getElementById("infos1").textContent = " choisir un produit";
                 document.getElementById("infos2").textContent = " activer les graphiques";
                 document.getElementById("infos3").textContent = " double cliquez sur l'element pour voir ces stats";
             }
-            // CREER PRODUITS                   
+            window.addEventListener('resize', checkMediaQuery8);
+            // CREER PRODUITS 
+            function checkMediaQuery9() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video40 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video40 = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM"; }
+                myFunction9();
+            }
             function myFunction9() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM";
+                document.getElementById("video").src = video40;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
                 document.getElementById("infos2").textContent = " cliquer sur + pour ajouter un produit";
                 document.getElementById("infos3").textContent = " Remplir les champs pour identifier votre produit";
                 document.getElementById("infos4").textContent = " Enregistrer";
             }
-            // MODIFIER PRODUITS                      
+            window.addEventListener('resize', checkMediaQuery9);
+            // MODIFIER PRODUITS  
+            function checkMediaQuery10() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video41 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video41 = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4"; }
+                myFunction10();
+            }
             function myFunction10() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4";
+                document.getElementById("video").src = video41;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner collection, commande puis produit";
                 document.getElementById("infos2").textContent = " Apuie long sur le produit que vous souhaiter modifier";
                 document.getElementById("infos3").textContent = " choisir Modifier";
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            window.addEventListener('resize', checkMediaQuery10);
             // NOTE DE FRAIS
+            function checkMediaQuery11() {
+                if (window.matchMedia("(min-width: 700px)").matches) { video42 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
+                else { video42 = "https://www.youtube.com/embed/ESiI54d0iwQ?autoplay=1&mute=1&loop=1&playlist=ESiI54d0iwQ"; }
+                myFunction11();
+            }
             function myFunction11() {
-                document.getElementById("video").src = "https://www.youtube.com/embed/ESiI54d0iwQ?autoplay=1&mute=1&loop=1&playlist=ESiI54d0iwQ";
+                document.getElementById("video").src = video42;
                 document.getElementById("infos").textContent = " selectionner Gestion";
                 document.getElementById("infos1").textContent = " selectionner Note de frais, puis choissisez une collection";
                 document.getElementById("infos2").textContent = " pour associer une Note de frais a une collection cliquez sur +";
                 document.getElementById("infos3").textContent = " Appuie long sur la Note de frais que vous souhaiter modifier"
                 document.getElementById("infos4").textContent = " Modifier les champs souhaiter et enregister";
             }
+            window.addEventListener('resize', checkMediaQuery11);
         </script>
         <div class="principale">
 
@@ -1247,7 +1325,7 @@
 
                 <div class="card">
 
-                    <button class="bouton" onclick="myFunction()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 CREER COLLECTION
@@ -1265,7 +1343,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction1()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery1()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 MODIFIER COLLECTION
@@ -1282,7 +1360,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction2()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery2()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 CREER COMMANDE
@@ -1299,7 +1377,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction3()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery3()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 MODIFIER COMMANDE
@@ -1318,7 +1396,7 @@
 
                 <div class="card">
 
-                    <button class="bouton" onclick="myFunction4()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery4()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 DASHBOARD PRINCIPAL
@@ -1335,7 +1413,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction5()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery5()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 DASHBOARD COMMANDE
@@ -1354,7 +1432,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction6()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery6()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 FRAIS DE PORT
@@ -1372,7 +1450,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction7()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery7()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 GESTION FOURNISSEUR
@@ -1388,7 +1466,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction6()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery6()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 FRAIS DE PORT
@@ -1405,7 +1483,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction7()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery7()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 GESTION FOURNISSEUR
@@ -1423,7 +1501,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction8()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery8()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 DASHBOARD PRODUITS
@@ -1440,7 +1518,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction9()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery9()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 CREER PRODUITS
@@ -1456,7 +1534,7 @@
                 </div>
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction10()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery10()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 MODIFIER PRODUITS
@@ -1473,7 +1551,7 @@
 
 
                 <div class="card">
-                    <button class="bouton" onclick="myFunction11()" type="button">
+                    <button class="bouton" onclick="checkMediaQuery11()" type="button">
                         <div class="bouton">
                             <p class="titreBouton">
                                 NOTE DE FRAIS
