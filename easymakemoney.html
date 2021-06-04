@@ -261,6 +261,18 @@
             text-shadow: 0 0 15px #d35400;
         }
 
+        .iframe {
+            width: "560";
+            height: "460";
+        }
+
+        @media only screen and (max-width: 1637px) {
+            .iframe {
+                width: "560";
+                height: "460";
+            }
+        }
+
         @media only screen and (max-width: 1485px) {
             .lotie {
                 width: 90px;
@@ -290,6 +302,14 @@
                 width: 60px;
                 height: 25px;
 
+            }
+
+            .taille {
+                height: 140px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 56px;
             }
         }
 
@@ -350,6 +370,26 @@
 
             div.principale {
                 min-width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 723px) {
+            .taille {
+                height: 100px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .taille {
+                height: 70px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 26px;
             }
         }
     </style>
@@ -477,14 +517,16 @@
                 <div class="col-lg-12">
                     <div class="eight-banner-content">
                         <div class="banner-content-box appeight-headline pera-content">
-                            <h1 class="cd-headline clip is-full-width">
-                                EASYMAKEMONEY
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">VOTRE APPLICATION</b>
-                                    <b>ENFIN</b>
-                                    <b>DISPONIBLE</b>
-                                </span>
-                            </h1>
+                            <div class="taille">
+                                <h1 class="cd-headline clip is-full-width fontsize">
+                                    EASYMAKEMONEY
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">VOTRE APPLICATION</b>
+                                        <b>ENFIN</b>
+                                        <b>DISPONIBLE</b>
+                                    </span>
+                                </h1>
+                            </div>
                             <P>Une gestion totale de votre budget avec d'autres fonctionnalités indispensables </P>
                             <div class="ei-banner-btn">
                                 <a href="#"><i class="fas fa-power-off"></i> Start Now</a>
@@ -853,7 +895,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight " data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/vHa_xPsRGCA?autoplay=1&mute=1&loop=1&playlist=vHa_xPsRGCA
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/vHa_xPsRGCA?autoplay=1&mute=1&loop=1&playlist=vHa_xPsRGCA
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp1.jpg" alt=""> -->
@@ -908,7 +950,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInLeft" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/qqcEEWlWGlg?autoplay=1&mute=1&loop=1&playlist=qqcEEWlWGlg
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/qqcEEWlWGlg?autoplay=1&mute=1&loop=1&playlist=qqcEEWlWGlg
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp2.jpg" alt=""> -->
@@ -963,7 +1005,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/QVDiEpi8Ykw?autoplay=1&mute=1&loop=1&playlist=QVDiEpi8Ykw
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/QVDiEpi8Ykw?autoplay=1&mute=1&loop=1&playlist=QVDiEpi8Ykw
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
@@ -1019,7 +1061,7 @@
                         </div>
                         <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
-                            <iframe id="video1" width="660" height="560" border-radius=20px src="https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/ZvzTqe9QVC8?autoplay=1&mute=1&loop=1&playlist=ZvzTqe9QVC8
                             " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                             <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
@@ -1208,7 +1250,7 @@
             // DASHBOARD PRINCIPAL
             function checkMediaQuery4() {
                 if (window.matchMedia("(min-width: 700px)").matches) { video35 = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU" }
-                else { video35 = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU"; }
+                else { video35 = "https://www.youtube.com/embed/4aFHxtkSAyQ?autoplay=1&mute=1&loop=1&playlist=4aFHxtkSAyQ"; }
                 myFunction4();
             }
             function myFunction4() {
@@ -1221,8 +1263,8 @@
             // window.addEventListener('resize', checkMediaQuery4);
             // DASHBOARD COMMANDE
             function checkMediaQuery5() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video36 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video36 = "https://www.youtube.com/embed/6bRs_eYNazw?autoplay=1&mute=1&loop=1&playlist=6bRs_eYNazw"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video36 = "https://www.youtube.com/embed/QDk91bIXRvU?autoplay=1&mute=1&loop=1&playlist=QDk91bIXRvU" }
+                else { video36 = "https://www.youtube.com/embed/jZMBngzvjuY?autoplay=1&mute=1&loop=1&playlist=jZMBngzvjuY"; }
                 myFunction5();
             }
             function myFunction5() {
@@ -1234,8 +1276,8 @@
             // window.addEventListener('resize', checkMediaQuery5);
             // FRAIS DE PORT
             function checkMediaQuery6() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video37 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video37 = "https://www.youtube.com/embed/EoPbNQhY_LM?autoplay=1&mute=1&loop=1&playlist=EoPbNQhY_LM"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video37 = "https://www.youtube.com/embed/EoPbNQhY_LM?autoplay=1&mute=1&loop=1&playlist=EoPbNQhY_LM" }
+                else { video37 = "https://www.youtube.com/embed/T-OZUtO8mJM?autoplay=1&mute=1&loop=1&playlist=T-OZUtO8mJM"; }
                 myFunction6();
             }
             function myFunction6() {
@@ -1249,8 +1291,8 @@
             // window.addEventListener('resize', checkMediaQuery6);
             // GESTION FOURNISSEUR
             function checkMediaQuery7() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video38 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video38 = "https://www.youtube.com/embed/_kPemc9DMpA?autoplay=1&mute=1&loop=1&playlist=_kPemc9DMpA"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video38 = "https://www.youtube.com/embed/_kPemc9DMpA?autoplay=1&mute=1&loop=1&playlist=_kPemc9DMpA" }
+                else { video38 = "https://www.youtube.com/embed/OxhBQb3OcZE?autoplay=1&mute=1&loop=1&playlist=OxhBQb3OcZE"; }
                 myFunction7();
             }
             function myFunction7() {
@@ -1264,8 +1306,8 @@
             // window.addEventListener('resize', checkMediaQuery7);
             // DASHBOARD PRODUITS
             function checkMediaQuery8() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video39 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video39 = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video39 = "https://www.youtube.com/embed/Fzh8i_gfxqg?autoplay=1&mute=1&loop=1&playlist=Fzh8i_gfxqg" }
+                else { video39 = "https://www.youtube.com/embed/JY-kJY-uJJs?autoplay=1&mute=1&loop=1&playlist=JY-kJY-uJJs"; }
                 myFunction8();
             }
             function myFunction8() {
@@ -1278,8 +1320,8 @@
             // window.addEventListener('resize', checkMediaQuery8);
             // CREER PRODUITS 
             function checkMediaQuery9() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video40 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video40 = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video40 = "https://www.youtube.com/embed/vGekX_TPVtM?autoplay=1&mute=1&loop=1&playlist=vGekX_TPVtM" }
+                else { video40 = "https://www.youtube.com/embed/WVSf_aPAdqM?autoplay=1&mute=1&loop=1&playlist=WVSf_aPAdqM"; }
                 myFunction9();
             }
             function myFunction9() {
@@ -1293,8 +1335,8 @@
             // window.addEventListener('resize', checkMediaQuery9);
             // MODIFIER PRODUITS  
             function checkMediaQuery10() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video41 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video41 = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video41 = "https://www.youtube.com/embed/qm3aSjPVpG4?autoplay=1&mute=1&loop=1&playlist=qm3aSjPVpG4" }
+                else { video41 = "https://www.youtube.com/embed/ROYwlJ0aZ0g?autoplay=1&mute=1&loop=1&playlist=ROYwlJ0aZ0g"; }
                 myFunction10();
             }
             function myFunction10() {
@@ -1308,8 +1350,8 @@
             // window.addEventListener('resize', checkMediaQuery10);
             // NOTE DE FRAIS
             function checkMediaQuery11() {
-                if (window.matchMedia("(min-width: 700px)").matches) { video42 = "https://www.youtube.com/embed/JsgoLPGU4Yw?autoplay=1&mute=1&loop=1&playlist=JsgoLPGU4Yw" }
-                else { video42 = "https://www.youtube.com/embed/ESiI54d0iwQ?autoplay=1&mute=1&loop=1&playlist=ESiI54d0iwQ"; }
+                if (window.matchMedia("(min-width: 700px)").matches) { video42 = "https://www.youtube.com/embed/ESiI54d0iwQ?autoplay=1&mute=1&loop=1&playlist=ESiI54d0iwQ" }
+                else { video42 = "https://www.youtube.com/embed/RFZhpIVMs98?autoplay=1&mute=1&loop=1&playlist=RFZhpIVMs98"; }
                 myFunction11();
             }
             function myFunction11() {
